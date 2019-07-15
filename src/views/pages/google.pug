@@ -1,0 +1,56 @@
+extends ../layouts/master1.pug
+
+//- favicons
+
+
+block title
+  title Google
+
+block manifestBrowserconfigFiles
+  link(href='../manifest.json', rel='manifest')
+  meta(name='msapplication-config' content='../browserconfig.xml')
+
+
+block content
+
+  nav
+    ul(style='list-style-type:none',display:inline)
+      li
+        a(href='https://mail.google.com') Gmail
+      li
+        a(href='https://mail.google.com') Images
+      li
+        a(href='https://www.google.co.in/intl/en/about/products?tab=wh')
+            img.menu-thumb(src='https://image.flaticon.com/icons/svg/121/121085.svg')
+
+
+
+
+
+  div.image
+    img(src=require('images/icons/googlelogo_color_272x92dp.png'))
+
+  div.search
+    form.search-form
+      input.search-field(type='text')
+
+
+  div.search-buttons
+      button Google Search
+      button I'm Feeling Lucky
+
+
+  .footer
+    ul(style='list-style-type:none',display:inline)
+      .footer__left
+        li
+          a(href='https://www.google.com/intl/en/ads/?fg=1') Advertising
+        li
+          a(href='https://www.google.com/services/?fg=1') Business
+        li
+          a(href='https://www.google.com/intl/en/about/') About
+      .footer__right
+        li
+          a(href='https://www.google.com/preferences?hl=en') Settings
+        li
+          a(href='https://www.google.com/intl/en/policies/?fg=1') Privacy & Terms

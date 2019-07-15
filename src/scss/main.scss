@@ -2,20 +2,225 @@
 './base/mixins';
 
 // Vendors
-@import './vendors/bootstrap/bootstrap';
+//@import './vendors/bootstrap/bootstrap';
 
 // Bem example
 .page {
 
   &__title {
+
     text-align: center;
 
-    &--color-red {
-      color: $red;
+    &--color-blue {
+      color: $blue;
+    }
+
+    &--color-black {
+      color: $black;
+    }
+
+    &--bgcolor-yellow {
+      background-color: $yellow;
     }
 
     &--bold {
       font-weight: bold;
     }
+  }
+}
+
+
+nav {
+  padding-left: 1600px;
+  text-align: right;
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    text-align: right;
+
+  }
+
+  li {
+    display: inline;
+
+    a {
+
+      color: $black;
+      padding: 10px;
+    }
+  }
+  text-align-last: right;
+
+
+}
+
+.image {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.search {
+
+  margin-bottom: 0;
+  margin-top: 20px;
+  max-width: 100%;
+  text-align: center;
+
+  form {
+    align-items: center;
+  }
+
+
+  .search-form {
+
+    margin-bottom: 0;
+    text-align: center;
+    width: auto;
+}
+
+  input {
+
+    border-radius: 25px;
+    height: 30px;
+    width: 600px;
+
+
+  }
+
+  .search-field {
+    border-radius: 25px;
+    height: 50px;
+    margin: 50px;
+    width: 600px;
+}
+
+}
+
+.search-buttons {
+
+  max-width: 100%;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 0;
+  text-align: center;
+
+
+  button {
+
+    background-color: $gray-100;
+    border-radius: 15px;
+    color: $blue;
+    font-size: 1em;
+    height: 20px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+
+}
+}
+
+.footer {
+
+  align-self: baseline;
+  background-color: $gray-300;
+  height: 40px;
+  margin-top: 380px;
+
+  ul {
+
+    display: inline;
+    list-style: none;
+    margin: 0;
+
+  }
+
+  .footer__left {
+    float: left;
+
+  }
+
+  .footer__right {
+
+    float: right;
+
+  }
+
+  li {
+
+    display: inline;
+
+}
+
+  a {
+    color: $black;
+    padding: 8px;
+    }
+
+  }
+
+
+//code for sticky nav bar
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+  a {
+    float: left;
+    display: block;
+    color: $white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    &:hover {
+      background: #ddd;
+      color: black;
+    }
+  }
+}
+
+.footer{
+  margin-top: 3000px;
+}
+
+//code for paralax
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-image: url('https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  h1 {
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+  .btn {
+    display: block;
+    width: 200px;
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: 3px solid white;
+    border-radius: 20px;
   }
 }

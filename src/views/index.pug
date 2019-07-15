@@ -1,5 +1,4 @@
 extends ./layouts/master.pug
-
 block title
   title My Page - Home
 
@@ -11,4 +10,17 @@ block content
 
   //- Desktop page
   section.page
-    h1.page__title--color-red # Index page
+    h1.page__title--color-red # Index page__title
+    h2.page__title--color-blue # alan aikara
+    a(href='google.com') google
+    |
+    |
+    a(class='button' href='google.com') google
+
+    h2(style={color:'red',background:'green'})
+    a(href='google.com') google
+
+    p i love india
+
+
+block scripts
